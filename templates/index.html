@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Speed Test</h1>
+        <button id="start-test">Start Test</button>
+        <p>Download Speed: <span id="download-speed">N/A</span></p>
+        <p>Ping: <span id="ping">N/A</span></p>
+        <div id="loading" class="loading">I</div>
+    </div>
+    <footer class="site-footer">
+        <span>Made By Hetu Dixit</span>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
